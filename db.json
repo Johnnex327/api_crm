@@ -1,0 +1,28 @@
+{
+  "clientes": [
+    {
+      "nombre": "Jhon Rafael",
+      "empresa": "Elite Gaming Center Ec",
+      "email": "jhon.naib327@gmail.com",
+      "telefono": "0978638264",
+      "notas": "po",
+      "id": 1
+    },
+    {
+      "nombre": "Isabel Fiallos",
+      "empresa": "Isolde Garden ",
+      "email": "isabelfiallos25@gmail.com",
+      "telefono": "0978638264",
+      "notas": "Empresa de flores y detalles",
+      "id": 2
+    },
+    {
+      "nombre": "Isabel & John",
+      "empresa": "Rose Gold",
+      "email": "isabelfiallos25@gmail.com",
+      "telefono": "0980092133",
+      "notas": "Floristeria y eventos elegantes",
+      "id": 3
+    }
+  ]
+}
