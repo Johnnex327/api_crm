@@ -7,6 +7,8 @@ import EditarCliente from "./paginas/EditarCliente";
 import VerCliente from "./paginas/VerCliente";
 
 function App() {
+ // de esta forma se accede a las variables de entorno
+  
   return (
     <BrowserRouter>
       <Routes>

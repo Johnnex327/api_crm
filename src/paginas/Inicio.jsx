@@ -7,7 +7,7 @@ const Inicio = () => {
   useEffect(() => {
     const obtenerClientesAPI = async () => {
       try {
-        const url = "http://localhost:4000/clientes";
+        const url = import.meta.env.VITE_API_URL;
         const respuesta = await fetch(url);
         const resultado = await respuesta.json();
 
@@ -26,15 +26,15 @@ const Inicio = () => {
     
     if(confirmar){
       try{
-        const url = `http://localhost:4000/clientes/${id}`
+        const url = `${import.meta.env.VITE_API_URL}/${id}`
         const respuesta = await fetch(url, {
           method: 'DELETE'
         })
 
         await respuesta.json
 
+        //filtra los clientes 
         const arrayClientes = clientes.filter( cliente => cliente.id !== id)
-
         setClientes(arrayClientes)
 
         //location.reload() //como que recarga el componente para que ya se quite el registrop eliminado del s
